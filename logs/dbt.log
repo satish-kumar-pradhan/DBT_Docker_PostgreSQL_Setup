@@ -1,0 +1,43 @@
+==================== 2026-09-10T18:39:06.205178Z | 01a08c9d-c9da-77c1-930f-7ef24ba9f6a3 ====================
+18:39:06.205403 [info ]: Installing dbt project and profile setup
+18:39:06.244855 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+18:39:06.245716 [info ]: Success Project created successfully!
+18:39:06.246041 [info ]: Info Project name: jaffle_shop
+18:39:06.246532 [info ]: Info Project directory: jaffle_shop
+18:39:18.786669 [info ]: Info Setting up your profile...
+18:39:18.787340 [info ]: Loading ~/.dbt/profiles.yml
+18:39:18.788181 [info ]: Profile 'jaffle_shop' already exists. You can choose how to proceed.
+18:39:28.129453 [info ]: Info Creating new profile...
+18:44:19.675517 [info ]: Info Backup created at C:\Users\Satish\.dbt\profiles.yml.bkp
+18:44:19.676174 [info ]: Success Profile written to C:\Users\Satish\.dbt\profiles.yml
+18:44:19.676364 [info ]: Validating profile inputs, adapters, and connection
+
+18:44:19.676557 [info ]: dbt-fusion 2.0.0-preview.205
+18:44:19.677091 [info ]: Started loading project
+18:44:19.679023 [info ]: Loading ~/.dbt/profiles.yml
+18:44:19.683492 [info ]: Finished loading project [  0.01s]
+18:44:19.683752 [info ]: Started debugging
+18:44:19.683861 [info ]: Debugging profile: dev
+18:44:19.684026 [info ]: Debugging dbt version: 2.0.0-preview.205
+18:44:19.684177 [info ]: Debugging platform: windows x86_64 (windows)
+18:44:19.684361 [info ]: Debugging adapter type: postgres (remote)
+18:44:19.725081 [info ]: Debugging dependencies:
+  git: OK
+18:44:19.725557 [info ]: Debugging connection:
+  "port": 54570,
+  "database": "test1db",
+  "schema": "dbt_spradhan",
+  "host": "localhost",
+  "user": "postgres"
+18:44:20.205393 [info ]: Finished debugging [  0.52s]
+18:44:20.205710 [error]: [AuthenticationFailed (dbt1011)]: dbt was unable to connect to the specified database.
+The following error was returned:
+
+Error with dynamic library: LoadLibraryExW failed
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/core/connect-data-platform/connection-profiles
+18:44:20.545319 [info ]: New version available 2.0.0-preview.218 (run `dbt system update`)
+18:44:20.573969 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [5m 14s]
